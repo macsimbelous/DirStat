@@ -30,7 +30,7 @@ namespace DirStat
             }
             foreach (dirinfo di in dirstat)
             {
-                if (di.files_count < 101)
+                if (di.files_count < 100)
                 {
                     Directory.Move(di.full_name, dest_dir + di.name);
                     Console.WriteLine("{0} MOVE TO {1}", di.name, dest_dir);
